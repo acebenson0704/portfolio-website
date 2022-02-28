@@ -1,3 +1,5 @@
+import React, { ReactNode } from 'react';
+
 import NextLink from 'next/link';
 import {
   Container,
@@ -15,7 +17,6 @@ import {
   Spacer
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import { ReactNode } from 'react';
 
 import Logo from './logo';
 import ThemeToggleButton from './theme-toggle-button';

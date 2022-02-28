@@ -1,16 +1,17 @@
-import type { NextPage } from 'next';
+import React, { ReactNode } from 'react';
+
 import Head from 'next/head';
-import Navbar from '../navbar';
 import { Box, Container } from '@chakra-ui/react';
-import { ReactNode } from 'react';
 import { Router } from 'next/router';
 
-type Props = {
+import Navbar from '../navbar';
+
+type LayoutProps = {
   children: ReactNode;
   router: Router;
 };
 
-const Layout: NextPage<Props> = ({ children, router }) => {
+const Layout = ({ children, router }: LayoutProps) => {
   return (
     <Box as="main" pb={8}>
       <Head>
