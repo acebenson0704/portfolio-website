@@ -26,13 +26,8 @@ const Logo = () => {
       <a>
         <LogoBox>
           <Image src={foorPrintImg} width={20} height={20} alt="logo" />
-          <Text
-            // color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            // fontFamily="M PLUS Rounded 1c"
-            // fontWeight="bold"
-            ml={3}
-          >
-            AceBenson
+          <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')} ml={3}>
+            Taso Chia-Cheng
           </Text>
         </LogoBox>
       </a>

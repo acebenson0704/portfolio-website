@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 type SectionProps = {
   children: ReactNode;
-  delay: number;
+  delay?: number;
 };
 
 const Section = ({ children, delay = 0 }: SectionProps) => {
