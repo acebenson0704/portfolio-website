@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title" textAlign="center">
-              Taso Chia-Cheng
+              Tsao Chia-Cheng
             </Heading>
             <Text mb={{ base: 0, md: 12 }} fontSize="xl" align="center">
               Computer Vision / Deep Learning / Web Developement
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
             <Section>
               <Paragraph>
                 My name is Tsao chia-cheng, a student in Taiwan. I&apos;m
-                currently studying at National Tsin Hua University to gain my
+                currently studying at National Tsing Hua University to gain my
                 master&apos;s degree in Computer Science.
               </Paragraph>
               <Paragraph>
@@ -114,9 +114,9 @@ const Home: NextPage = () => {
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
-            Graduated from National Tsin Hua University of with a bachelor&apos;s
-            degree in Interdisciplinary Program of Eletrical Engineering and
-            Computer Science.
+            Graduated from National Tsing Hua University of with a
+            bachelor&apos;s degree in Interdisciplinary Program of Eletrical
+            Engineering and Computer Science.
           </BioSection>
         </Section>
       </Container>

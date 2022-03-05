@@ -27,7 +27,7 @@ const Logo = () => {
         <LogoBox>
           <Image src={foorPrintImg} width={20} height={20} alt="logo" />
           <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')} ml={3}>
-            Taso Chia-Cheng
+            Tsao Chia-Cheng
           </Text>
         </LogoBox>
       </a>

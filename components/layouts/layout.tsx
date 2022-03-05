@@ -1,10 +1,17 @@
 import React, { ReactNode } from 'react';
 
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 import { Box, Container } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 
 import Navbar from '../navbar';
+import AniballLoader from '../aniball-loader';
+
+const LazyAniball = dynamic(() => import('../aniball'), {
+  ssr: false,
+  loading: () => <AniballLoader />
+});
 
 type LayoutProps = {
   children: ReactNode;
@@ -16,12 +23,14 @@ const Layout = ({ children }: LayoutProps) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Taso - Homepage</title>
+        <title>Tsao Chia-Cheng - Homepage</title>
       </Head>
 
       <Navbar path={router.asPath} />
 
       <Container maxW="container.lg" pt={16}>
+        <LazyAniball />
+
         {children}
       </Container>
     </Box>

@@ -6,6 +6,7 @@ stack: 'Typescript, Cocos Creator, Git'
 abstract: 'Simple poker game online'
 description: 'To be continued...'
 category: 'Cocos Creator Project'
-image: '/images/works/Tongbi.jpg'
-video: ''
+image: '/images/works/tongbi.jpg'
+video:
+  - '/videos/works/tongbi-demo.mp4'
 ---

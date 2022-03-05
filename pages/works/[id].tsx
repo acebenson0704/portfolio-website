@@ -1,13 +1,18 @@
 import {
   Badge,
+  Box,
+  Center,
   Container,
   Grid,
   GridItem,
+  Link,
   List,
-  ListItem
+  ListItem,
+  Text
 } from '@chakra-ui/react';
+import { MDXRemote } from 'next-mdx-remote';
+
 import ArticleLayout from '../../components/layouts/article';
-import Paragraph from '../../components/paragraphy';
 import { Title } from '../../components/works';
 import { getAllWorkIds, getWorkData } from '../../libs/works';
 
@@ -41,25 +46,34 @@ type workProps = {
     year: string;
     platform: string;
     stack: string;
+    source: string;
     abstract: string;
-    description: string;
+    image: string;
+    video: Array<string>;
     contentHtml: any;
   };
 };
 
+const components = { Text, Box, List, ListItem, Badge };
+
 export default function Work({ workData }: workProps) {
-  const listitems: Array<keyof typeof workData> = ['platform', 'stack'];
+  const listitems: Array<keyof typeof workData> = [
+    'platform',
+    'stack',
+    'source'
+  ];
+
   return (
-    <ArticleLayout title="test">
-      <Container maxW="container.lg">
+    <ArticleLayout title={workData.title}>
+      <Container maxW="container.md">
         <Title>
           {workData.title} <Badge>{workData.year}</Badge>
         </Title>
-        <Paragraph>{workData.description}</Paragraph>
+        <MDXRemote {...workData.contentHtml} components={components} />
         <List ml={4} my={4}>
           {listitems.map((listitem) => {
-            if (listitem in workData) {
-              return (
+            return (
+              listitem in workData && (
                 <ListItem key={listitem}>
                   <Grid templateColumns="repeat(12, 1fr)">
                     <GridItem colSpan={{ base: 12, md: 2 }}>
@@ -68,16 +82,31 @@ export default function Work({ workData }: workProps) {
                       </Badge>
                     </GridItem>
                     <GridItem colSpan={{ base: 12, md: 10 }}>
-                      {workData[listitem]}
+                      {listitem === 'source' ? (
+                        <Link href={workData[listitem]} target="_blank">
+                          {workData.title}
+                        </Link>
+                      ) : (
+                        workData[listitem]
+                      )}
                     </GridItem>
                   </Grid>
                 </ListItem>
-              );
-            }
+              )
+            );
           })}
         </List>
+        {workData.video &&
+          workData.video.map((video) => {
+            return (
+              <Center mt={12} key={video}>
+                <video autoPlay loop muted width="700px">
+                  <source src={video} />
+                </video>
+              </Center>
+            );
+          })}
       </Container>
-      <div dangerouslySetInnerHTML={{ __html: workData.contentHtml }} />
     </ArticleLayout>
   );
 }

@@ -39,7 +39,7 @@ const Works: NextPage<allWorksDataProps> = ({
   allWorksData
 }: allWorksDataProps) => {
   return (
-    <ArticleLayout>
+    <ArticleLayout title="Wroks">
       <Container maxW="container.lg">
         <Heading as="h2" fontSize={20} my={4}>
           Computer Vision
@@ -48,7 +48,7 @@ const Works: NextPage<allWorksDataProps> = ({
         <Section>
           <Paragraph>
             Computer Vision has been achived with Neural Networks. My lab
-            conduct research in image features extractor and geometric
+            conduct research in image features extraction and geometric
             processing.
           </Paragraph>
         </Section>
