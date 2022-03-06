@@ -17,6 +17,7 @@ import {
   Spacer
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
+import { IoLogoGithub } from 'react-icons/io5';
 
 import Logo from './logo';
 import ThemeToggleButton from './theme-toggle-button';
@@ -81,6 +82,18 @@ const Navbar = (props: NavbarProps) => {
           <LinkItem href="/notes" path={path}>
             Notes
           </LinkItem>
+          <Link
+            target="_blank"
+            href="#"
+            color={useColorModeValue('gray200', 'whiteAlpha.900')}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoGithub />
+            Source
+          </Link>
         </Stack>
 
         <Flex flex={1}>

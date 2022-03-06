@@ -1,40 +1,47 @@
 import React, { ReactNode } from 'react';
 
-import { Box, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
+import {
+  Box,
+  LinkBox,
+  LinkOverlay,
+  Text,
+  useColorModeValue
+} from '@chakra-ui/react';
 import { Global } from '@emotion/react';
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { motion } from 'framer-motion';
 
 type GridItemProps = {
-  children: ReactNode;
+  children?: ReactNode;
   href: string;
   title: string;
-  thumbnail: StaticImageData;
 };
 
-export const GridItem = ({
-  children,
-  href,
-  title,
-  thumbnail
-}: GridItemProps) => {
-  <Box w="100%" textAlign="center">
-    <LinkBox cursor="pointer">
-      <Image
-        src={thumbnail}
-        alt={title}
-        className="grid-item-thumbnail"
-        placeholder="blur"
-        loading="lazy"
-      />
+export const GridItem = ({ children, href, title }: GridItemProps) => (
+  <motion.div
+    whileHover={{ color: ['', '#ff471a'] }}
+    transition={{ duration: 0.2, type: 'easeInOut' }}
+  >
+    <LinkBox
+      cursor="pointer"
+      w="100%"
+      h="100%"
+      borderColor={useColorModeValue('gray.800', 'whiteAlpha.800')}
+      borderWidth={2}
+      borderStyle="solid"
+      borderRadius={12}
+      p={4}
+    >
       <LinkOverlay href={href} target="_blank">
-        <Text mt={2}>{title}</Text>
+        <Text fontSize={20} my={2} textAlign="center">
+          {title}
+        </Text>
       </LinkOverlay>
-      <Text fontSize={14}>{children}</Text>
+      <Text fontSize={16}>{children}</Text>
     </LinkBox>
-  </Box>;
-};
+  </motion.div>
+);
 
 type WorkGridItemProps = {
   children: ReactNode;
@@ -50,15 +57,16 @@ export const WorkGridItem = ({
   thumbnail
 }: WorkGridItemProps) => (
   <Box w="100%" textAlign="center">
-    <motion.div whileHover={{ scale: 1.1 }}>
+    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
       <NextLink href={`/works/${id}`} passHref>
         <LinkBox cursor="pointer">
           <Box
-            borderColor="whiteAlpha.800"
+            borderColor={useColorModeValue('gray.800', 'whiteAlpha.800')}
             borderWidth={2}
             borderStyle="solid"
             borderRadius={12}
             position="relative"
+            p={1}
           >
             <Image
               src={thumbnail}

@@ -7,6 +7,7 @@ import { useRouter } from 'next/router';
 
 import Navbar from '../navbar';
 import AniballLoader from '../aniball-loader';
+import Footer from '../footer';
 
 const LazyAniball = dynamic(() => import('../aniball'), {
   ssr: false,
@@ -33,6 +34,8 @@ const Layout = ({ children }: LayoutProps) => {
 
         {children}
       </Container>
+
+      <Footer />
     </Box>
   );
 };

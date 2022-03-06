@@ -58,7 +58,7 @@ const Works: NextPage<allWorksDataProps> = ({
             .filter((data) => data.category === 'Computer Vision')
             .map((data) => {
               return (
-                <Section key={data.id}>
+                <Section delay={0.1} key={data.id}>
                   <WorkGridItem
                     id={data.id}
                     title={data.title}
@@ -97,7 +97,7 @@ const Works: NextPage<allWorksDataProps> = ({
             .filter((data) => data.category === 'Cocos Creator Project')
             .map((data) => {
               return (
-                <Section key={data.id}>
+                <Section delay={0.2} key={data.id}>
                   <WorkGridItem
                     id={data.id}
                     title={data.title}
