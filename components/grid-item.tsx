@@ -57,7 +57,7 @@ export const WorkGridItem = ({
   thumbnail
 }: WorkGridItemProps) => (
   <Box w="100%" textAlign="center">
-    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
       <NextLink href={`/works/${id}`} passHref>
         <LinkBox cursor="pointer">
           <Box

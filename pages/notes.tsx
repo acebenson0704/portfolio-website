@@ -20,14 +20,13 @@ const Notes: NextPage = () => {
               title="Window Terminal Shortcuts"
               href="https://hackmd.io/@AceBenson/rJO65Gnyq"
             >
-              Some useful windows terminal shotcuts, which may help you to
-              improve your productivity.
+              Some useful windows terminal shotcuts, which may help you to improve your productivity.
             </GridItem>
             <GridItem
               title="Vim tutorial"
               href="https://hackmd.io/@AceBenson/r1n9C_gnK"
             >
-              Basic vim commands and how to config neovim.
+              Basic vim commands and how to config neovim. Including lsp config and server for word autocomplete.
             </GridItem>
           </SimpleGrid>
         </Section>

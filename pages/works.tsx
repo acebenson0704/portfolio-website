@@ -41,21 +41,50 @@ const Works: NextPage<allWorksDataProps> = ({
   return (
     <ArticleLayout title="Wroks">
       <Container maxW="container.lg">
+          
         <Heading as="h2" fontSize={20} my={4}>
           Computer Vision
         </Heading>
         <Divider />
         <Section>
           <Paragraph>
-            Computer Vision has been achived with Neural Networks. My lab
-            conduct research in image features extraction and geometric
-            processing.
+            Computer Vision has been achived with Neural Networks. With the success of deep learning, our life is more convenient.
+            My Lab conduct research on this topic, the below is what I took part in.
           </Paragraph>
         </Section>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           {allWorksData
             .filter((data) => data.category === 'Computer Vision')
+            .map((data) => {
+              return (
+                <Section delay={0.1} key={data.id}>
+                  <WorkGridItem
+                    id={data.id}
+                    title={data.title}
+                    thumbnail={data.image}
+                  >
+                    {data.abstract}
+                  </WorkGridItem>
+                </Section>
+              );
+            })}
+        </SimpleGrid>
+
+        <Heading as="h2" fontSize={20} my={4}>
+          Web Development
+        </Heading>
+        <Divider />
+        <Section>
+          <Paragraph>
+            In my spare time, I enjoy learning something new.
+            Web development is one of them. it's convenient to write code with any laptop. And the result can be also used anywhere.
+          </Paragraph>
+        </Section>
+
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          {allWorksData
+            .filter((data) => data.category === 'Web Development')
             .map((data) => {
               return (
                 <Section delay={0.1} key={data.id}>
@@ -87,8 +116,11 @@ const Works: NextPage<allWorksDataProps> = ({
           <Paragraph>
             The following projects are Academia and Industry Collaboration,
             which collaborate with BioxiTech and IGS. The backend server and
-            game art design are provided by companies. I am responsible for
+            game art design were provided by companies. I was responsible for
             building frontend.
+          </Paragraph>
+          <Paragraph>
+            In the progress of projects, I learned how to version control by git and svn, and understood how to call backend API.
           </Paragraph>
         </Section>
 

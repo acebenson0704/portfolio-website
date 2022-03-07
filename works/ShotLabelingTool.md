@@ -5,7 +5,6 @@ platform: 'windows'
 stack: 'Python, Qt'
 source: 'https://github.com/AceBenson/shot_labelingtool'
 abstract: 'A labeling tool for classifying clips of baseball games'
-description: 'To be continued...'
 category: 'Computer Vision'
 image: '/images/works/shot-labeling-tool.png'
 video:
@@ -13,6 +12,9 @@ video:
 ---
 
 <Box>
-  Shot Detection is important to cut videos.
-  This labeling tool is used for adjusting pre-generated detection results, and classifying which types the current clip is.
+  Shot detetion is a field of research of video processing. 
+  Its subject is the automated detection of transitions between shots in digital video with the purpose of temporal segmentation of videos.
+  This labeling tool is used for fixing pre-generated detection results, and classifying which types the current clip is.
+  <Image src="/images/shot-detection-schematic.png" bg="whiteAlpha.500" mt={6} />
+  <Box textAlign="right" opacity={0.4} fontSize="sm">https://algorithmia.com/algorithms/gifscom/deepshotdetection</Box>
 </Box>

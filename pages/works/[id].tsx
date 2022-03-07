@@ -1,3 +1,4 @@
+import { React } from 'react';
 import {
   Badge,
   Box,
@@ -5,6 +6,8 @@ import {
   Container,
   Grid,
   GridItem,
+  HStack,
+  Image,
   Link,
   List,
   ListItem,
@@ -47,6 +50,7 @@ type workProps = {
     platform: string;
     stack: string;
     source: string;
+    website: string;
     abstract: string;
     image: string;
     video: Array<string>;
@@ -54,13 +58,14 @@ type workProps = {
   };
 };
 
-const components = { Text, Box, List, ListItem, Badge };
+const components = { Text, Box, List, ListItem, Badge, Image, HStack, Container };
 
 export default function Work({ workData }: workProps) {
   const listitems: Array<keyof typeof workData> = [
     'platform',
     'stack',
-    'source'
+    'source',
+    'website'
   ];
 
   return (
@@ -105,7 +110,11 @@ export default function Work({ workData }: workProps) {
                 </video>
               </Center>
             );
-          })}
+          })
+        }
+        <Center>
+          <Text as="i" textAlign="center">Demo video</Text>
+        </Center>
       </Container>
     </ArticleLayout>
   );
