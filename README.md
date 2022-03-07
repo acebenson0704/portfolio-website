@@ -3,13 +3,15 @@
 [https://portfolio-website-eta-three.vercel.app/](https://portfolio-website-eta-three.vercel.app/)
 
 ## Notes
+
 This website is based on [Takuya Matsuyama](https://github.com/craftzdog/craftzdog-homepage)'s tutorial.
 
 What's different:
-  * JavaScript to TypeScript.
-  * Rather than create pages for every works, use dynamic routes by ```works/[id].tsx```.
-  * Parse markdown file as contents of works.
-  * Replace voxel dog with my own blender works.
+
+- JavaScript to TypeScript.
+- Rather than create pages for every works, use dynamic routes by `works/[id].tsx`.
+- Parse markdown file as contents of works.
+- Replace voxel dog with my own blender works.
 
 ## Stack
 

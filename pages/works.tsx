@@ -41,15 +41,15 @@ const Works: NextPage<allWorksDataProps> = ({
   return (
     <ArticleLayout title="Wroks">
       <Container maxW="container.lg">
-          
         <Heading as="h2" fontSize={20} my={4}>
           Computer Vision
         </Heading>
         <Divider />
         <Section>
           <Paragraph>
-            Computer Vision has been achived with Neural Networks. With the success of deep learning, our life is more convenient.
-            My Lab conduct research on this topic, the below is what I took part in.
+            Computer Vision has been achived with Neural Networks. With the
+            success of deep learning, our life is more convenient. My Lab
+            conduct research on this topic, the below is what I took part in.
           </Paragraph>
         </Section>
 
@@ -77,8 +77,9 @@ const Works: NextPage<allWorksDataProps> = ({
         <Divider />
         <Section>
           <Paragraph>
-            In my spare time, I enjoy learning something new.
-            Web development is one of them. it's convenient to write code with any laptop. And the result can be also used anywhere.
+            In my spare time, I enjoy learning something new. Web development is
+            one of them. it&apos;s convenient to write code with any laptop. And
+            the result can be also used anywhere.
           </Paragraph>
         </Section>
 
@@ -120,7 +121,8 @@ const Works: NextPage<allWorksDataProps> = ({
             building frontend.
           </Paragraph>
           <Paragraph>
-            In the progress of projects, I learned how to version control by git and svn, and understood how to call backend API.
+            In the progress of projects, I learned how to version control by git
+            and svn, and understood how to call backend API.
           </Paragraph>
         </Section>
 

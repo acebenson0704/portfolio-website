@@ -114,7 +114,10 @@ const Navbar = (props: NavbarProps) => {
                 <NextLink href="/notes" passHref>
                   <MenuItem as={Link}>Notes</MenuItem>
                 </NextLink>
-                <MenuItem as={Link} href="https://github.com/acebenson0704/portfolio-website">
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/acebenson0704/portfolio-website"
+                >
                   View Source
                 </MenuItem>
               </MenuList>

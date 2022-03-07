@@ -92,12 +92,15 @@ const Home: NextPage = () => {
             Work
           </Heading>
           <Paragraph>
-            My works were mainly completed when I was junior and senior and some of them were collaborate with other companies. 
-            For example, the company may provided template, art resources, documents, and I had to finish it as requirements.
+            My works were mainly completed when I was junior and senior and some
+            of them were collaborate with other companies. For example, the
+            company may provided template, art resources, documents, and I had
+            to finish it as requirements.
           </Paragraph>
           <Paragraph>
-            Another type of work is to study state-of-the-art paper, implement it or fine-tune it. Based on previous knowledge, applying it on our work to achieve our goal.
-            Check out my portfolio below!
+            Another type of work is to study state-of-the-art paper, implement
+            it or fine-tune it. Based on previous knowledge, applying it on our
+            work to achieve our goal. Check out my portfolio below!
           </Paragraph>
           <Center my={4}>
             <NextLink href="/works" scroll={false} passHref>

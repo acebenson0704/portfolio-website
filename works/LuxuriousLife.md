@@ -8,4 +8,4 @@ category: 'Cocos Creator Project'
 image: '/images/works/luxurious-life.png'
 video:
   - '/videos/works/luxurious-life-demo.mp4'
---- 
+---
