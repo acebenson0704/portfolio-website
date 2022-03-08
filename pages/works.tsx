@@ -78,8 +78,9 @@ const Works: NextPage<allWorksDataProps> = ({
         <Section>
           <Paragraph>
             In my spare time, I enjoy learning something new. Web development is
-            one of them. it&apos;s convenient to write code with any laptop. And
-            the result can be also used anywhere.
+            one of them because the convenience of writing code anywhere without
+            setting up environment. In addtion, with PC, labtop, or even mobile
+            phone, you can browse the web anytime.
           </Paragraph>
         </Section>
 
@@ -115,8 +116,8 @@ const Works: NextPage<allWorksDataProps> = ({
             phones, tablets, PCs, and the web.
           </Paragraph>
           <Paragraph>
-            The following projects are Academia and Industry Collaboration,
-            which collaborate with BioxiTech and IGS. The backend server and
+            The following projects were Academia and Industry Collaboration,
+            which collaborated with BioxiTech and IGS. The backend server and
             game art design were provided by companies. I was responsible for
             building frontend.
           </Paragraph>

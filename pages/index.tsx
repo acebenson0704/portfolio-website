@@ -92,15 +92,14 @@ const Home: NextPage = () => {
             Work
           </Heading>
           <Paragraph>
-            My works were mainly completed when I was junior and senior and some
-            of them were collaborate with other companies. For example, the
-            company may provided template, art resources, documents, and I had
-            to finish it as requirements.
+            Some of my works collaborated with other companies, the companies
+            provided template, art resources, documents, and my task were to
+            finish it accroding to requirements.
           </Paragraph>
           <Paragraph>
-            Another type of work is to study state-of-the-art paper, implement
-            it or fine-tune it. Based on previous knowledge, applying it on our
-            work to achieve our goal. Check out my portfolio below!
+            Another type of works were to study state-of-the-art paper,
+            implement it or fine-tune it. Based on previous knowledge, applying
+            it on our work to achieve our goal.
           </Paragraph>
           <Center my={4}>
             <NextLink href="/works" scroll={false} passHref>
@@ -118,6 +117,10 @@ const Home: NextPage = () => {
           <BioSection>
             <BioYear>1999</BioYear>
             Born in Pintung, Taiwan.
+          </BioSection>
+          <BioSection>
+            <BioYear>2018</BioYear>
+            Exchange program with Beijing TsingHua University in Summer
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>

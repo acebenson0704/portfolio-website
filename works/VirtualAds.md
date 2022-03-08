@@ -13,11 +13,12 @@ video:
 
 <Box>
   The target of this project is to place advertisement on grandstand or signboard.
-  With kind of this tech, we can replace the real ad by deep learning and display different ad in different region.
+  With kind of this tech, we can replace the real ads by deep learning and display different ads according to region.
   The following is part of this project, the idea is to reproduce the paper named "Markerless Augmented Advertising for Sports Videos" as baseline.
   <Container mt={6}>
     <Image src="/images/works/virtual-ads-1.png" />
     <Image src="/images/works/virtual-ads-2.png" />
     <Image src="/images/works/virtual-ads-3.png" />
+    <Image src="/images/works/virtual-ads.png" />
   </Container>
 </Box>

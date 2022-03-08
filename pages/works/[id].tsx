@@ -95,9 +95,9 @@ export default function Work({ workData }: workProps) {
                       </Badge>
                     </GridItem>
                     <GridItem colSpan={{ base: 12, md: 10 }}>
-                      {listitem === 'source' ? (
+                      {listitem === 'source' || listitem === 'website' ? (
                         <Link href={workData[listitem]} target="_blank">
-                          {workData.title}
+                          {workData.title} - {listitem}
                         </Link>
                       ) : (
                         workData[listitem]
